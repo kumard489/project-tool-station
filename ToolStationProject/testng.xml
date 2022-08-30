@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<parameter name="homePage"
+			value="https://www.toolstation.com/"></parameter>
+		<parameter name="signInPage"
+			value="https://www.toolstation.com/login"></parameter>
+			<!-- <groups>
+			<run>
+			<include name="retest"></include>
+			</run>
+			</groups> -->
+		<classes>
+			<class name="org.projecttoolstation.homePageTesting" />
+			<class name="org.projecttoolstation.signUpFunctionality" />
+			<class name="org.projecttoolstation.TestingSingInSinario" />
+			<class name="org.projecttoolstation.forgotPasswordFuntionality" />
+			<class name="org.projecttoolstation.SearchBoxFunctionality" />
+
+
+
+		</classes>
+	</test>
+</suite> 

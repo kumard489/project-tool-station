@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="signInPage" value="https://www.toolstation.com/login"/>
+    <parameter name="homePage" value="https://www.toolstation.com/"/>
+    <groups>
+      <run>
+        <include name="retest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.projecttoolstation.SearchBoxFunctionality">
+        <methods>
+          <include name="startingBrowser"/>
+          <include name="testCase1"/>
+          <include name="startTime"/>
+          <include name="endTime"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- org.projecttoolstation.SearchBoxFunctionality -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
