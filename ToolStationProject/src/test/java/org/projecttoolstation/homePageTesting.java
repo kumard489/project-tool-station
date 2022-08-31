@@ -18,7 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class homePageTesting extends BaseClass {
 
-	@BeforeClass(alwaysRun=true)
+	@BeforeClass(alwaysRun = true)
 	public void startingBrowser() {
 		launchChrome();
 		chromeObject();
@@ -26,8 +26,8 @@ public class homePageTesting extends BaseClass {
 		System.out.println("homePageTesting started");
 	}
 
-	@Parameters({"homePage"})
-	@BeforeMethod(groups="retest")
+	@Parameters({ "homePage" })
+	@BeforeMethod(groups = "retest")
 	public void startTime(String url) {
 		implicitWaiting();
 		launchUrl(url);
@@ -36,7 +36,7 @@ public class homePageTesting extends BaseClass {
 	}
 
 	// accepting cookies
-	@Test(groups="retest")
+	@Test(groups = "retest")
 	public void popupFunctionalityTest1() {
 		HomepagePojo hp = new HomepagePojo();
 		WebElement acceptAll = hp.getAcceptAll();
@@ -45,7 +45,7 @@ public class homePageTesting extends BaseClass {
 	}
 
 	// checking setbranch UI
-	@Test(groups="smoke")
+	@Test(groups = "smoke")
 	public void testcase1() {
 		HomepagePojo hp = new HomepagePojo();
 		implicitWaiting();
@@ -55,7 +55,7 @@ public class homePageTesting extends BaseClass {
 	}
 
 	// checking signin UI
-	@Test(groups="smoke")
+	@Test(groups = "smoke")
 	public void testCase2() {
 		HomepagePojo hp = new HomepagePojo();
 		implicitWaiting();
@@ -65,7 +65,7 @@ public class homePageTesting extends BaseClass {
 	}
 
 	// checking register UI
-	@Test(groups="smoke")
+	@Test(groups = "smoke")
 	public void testcase3() {
 		HomepagePojo hp = new HomepagePojo();
 		implicitWaiting();
@@ -75,7 +75,7 @@ public class homePageTesting extends BaseClass {
 	}
 
 	// checking cart UI
-	@Test(groups="smoke")
+	@Test(groups = "smoke")
 	public void testcase4() {
 		HomepagePojo hp = new HomepagePojo();
 		implicitWaiting();
@@ -84,16 +84,17 @@ public class homePageTesting extends BaseClass {
 
 	}
 
-	@AfterMethod(groups="retest")
+	@AfterMethod(groups = "retest")
 	public void endTime() {
 		Date d = new Date();
 		System.out.println(d);
 
 	}
 
-	@AfterClass(alwaysRun=true)
+	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
-		signUpFunctionality suf=new signUpFunctionality();
+		/* closeBrowser(); */
+		signUpFunctionality suf = new signUpFunctionality();
 	}
 
 }

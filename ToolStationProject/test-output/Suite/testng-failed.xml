@@ -4,16 +4,20 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="signInPage" value="https://www.toolstation.com/login"/>
     <parameter name="homePage" value="https://www.toolstation.com/"/>
-    <groups>
-      <run>
-        <include name="retest"/>
-      </run>
-    </groups>
     <classes>
+      <class name="org.projecttoolstation.Trolleyfunctionality">
+        <methods>
+          <include name="endTime"/>
+          <include name="Startingbrowser"/>
+          <include name="quitBrowser"/>
+          <include name="testCase1"/>
+          <include name="startTime"/>
+        </methods>
+      </class> <!-- org.projecttoolstation.Trolleyfunctionality -->
       <class name="org.projecttoolstation.SearchBoxFunctionality">
         <methods>
           <include name="startingBrowser"/>
-          <include name="testCase1"/>
+          <include name="testCase1" invocation-numbers="0"/>
           <include name="startTime"/>
           <include name="endTime"/>
           <include name="quitBrowser"/>

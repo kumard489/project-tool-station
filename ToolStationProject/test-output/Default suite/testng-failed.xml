@@ -6,7 +6,7 @@
       <class name="org.projecttoolstation.SearchBoxFunctionality">
         <methods>
           <include name="startingBrowser"/>
-          <include name="testCase1" invocation-numbers="0 1 2 3"/>
+          <include name="testCase1" invocation-numbers="0"/>
           <include name="startTime"/>
           <include name="endTime"/>
           <include name="quitBrowser"/>

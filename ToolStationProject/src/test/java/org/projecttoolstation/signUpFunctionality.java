@@ -13,42 +13,41 @@ import org.utilities.BaseClass;
 import org.utilities.CreateMyAccountPojo;
 import org.utilities.HomepagePojo;
 
-public class signUpFunctionality extends BaseClass{
-	
-	@BeforeClass(alwaysRun=true)
+public class signUpFunctionality extends BaseClass {
+
+	@BeforeClass(alwaysRun = true)
 	public void startingBrowser() {
-		/*launchChrome();
-		chromeObject();
-		winMax();*/
+		/*
+		 * launchChrome(); chromeObject(); winMax();
+		 */
 		System.out.println("signUpFunctionality started");
 	}
-	
-	@BeforeMethod(groups="smoke")
+
+	@BeforeMethod(groups = "smoke")
 	public void startTime() {
 		launchUrl("https://www.toolstation.com/register");
-		Date d=new Date();
+		Date d = new Date();
 		System.out.println(d);
 	}
 	/*
-	@Test(groups="smoke")
-	public void popupFunctionalityTest4() {
-		HomepagePojo hp=new HomepagePojo();
-		WebElement acceptAll = hp.getAcceptAll();
-		Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
-		acceptAll.click();
-	}*/
-	
-	@Test(groups="smoke")
+	 * @Test(groups="smoke") public void popupFunctionalityTest4() { HomepagePojo
+	 * hp=new HomepagePojo(); WebElement acceptAll = hp.getAcceptAll();
+	 * Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
+	 * acceptAll.click(); }
+	 */
+    
+	// filling mandatory text box and giving short password
+	@Test(groups = "smoke")
 	public void testCase1() {
 		implicitWaiting();
-		CreateMyAccountPojo cma=new CreateMyAccountPojo();
-		
-	    WebElement selectTitle = cma.getSelectTitle();
-	    selectingDropdownText(selectTitle, "Mr");
-	    
-	    cma.getTxtFirstName().sendKeys(getData(2, 1, 2));
-	    cma.getTxtLastName().sendKeys(getData(2, 1, 3));
-	    cma.getTxtMobile().sendKeys(getData(2, 1, 5));
+		CreateMyAccountPojo cma = new CreateMyAccountPojo();
+
+		WebElement selectTitle = cma.getSelectTitle();
+		selectingDropdownText(selectTitle, "Mr");
+
+		cma.getTxtFirstName().sendKeys(getData(2, 1, 2));
+		cma.getTxtLastName().sendKeys(getData(2, 1, 3));
+		cma.getTxtMobile().sendKeys(getData(2, 1, 5));
 		cma.getTxtEmail().sendKeys(getData(2, 1, 7));
 		cma.getCbEmail().click();
 		cma.getTxtEnterAddressManually().click();
@@ -60,17 +59,17 @@ public class signUpFunctionality extends BaseClass{
 		cma.getBtnContinue().click();
 		Assert.assertTrue(cma.getShortPasswordMessage().getText().contains("too short"));
 	}
-	
-	 
-	@AfterMethod(groups="smoke")
+
+	@AfterMethod(groups = "smoke")
 	public void endTime() {
-		Date d=new Date();
+		Date d = new Date();
 		System.out.println(d);
 	}
-	
-	@AfterClass(alwaysRun=true)
+
+	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
-		TestingSingInSinario tsi=new TestingSingInSinario();
+		/* closeBrowser(); */
+		TestingSingInSinario tsi = new TestingSingInSinario();
 	}
-	
+
 }

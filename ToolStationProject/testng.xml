@@ -17,6 +17,7 @@
 			<class name="org.projecttoolstation.TestingSingInSinario" />
 			<class name="org.projecttoolstation.forgotPasswordFuntionality" />
 			<class name="org.projecttoolstation.SearchBoxFunctionality" />
+			<class name="org.projecttoolstation.Trolleyfunctionality"/>
 
 
 

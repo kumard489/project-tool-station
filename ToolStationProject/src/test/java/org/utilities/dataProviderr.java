@@ -38,5 +38,12 @@ public class dataProviderr extends BaseClass {
 
 		};
 	}
+	
+	@DataProvider(name="url")
+	private Object[][] url(){
+		return new Object[][] {
+			{getData(3, 5, 1)}
+		};
+	}
 
 }

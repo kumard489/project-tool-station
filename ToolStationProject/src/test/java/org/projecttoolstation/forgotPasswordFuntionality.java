@@ -14,49 +14,49 @@ import org.utilities.BaseClass;
 import org.utilities.ForgottenPasswordPojo;
 import org.utilities.HomepagePojo;
 
-public class forgotPasswordFuntionality extends BaseClass{
-	
-	@BeforeClass(alwaysRun=true)
+public class forgotPasswordFuntionality extends BaseClass {
+
+	@BeforeClass(alwaysRun = true)
 	public void startingBowser() {
-		/*launchChrome();
-		chromeObject();
-		winMax();*/
+		/*
+		 * launchChrome(); chromeObject(); winMax();
+		 */
 		System.out.println("forgotPasswordFuntionality started");
 	}
-	
-	@BeforeMethod(groups="smoke")
+
+	@BeforeMethod(groups = "smoke")
 	public void starTime() {
-		launchUrl("https://www.toolstation.com/password/reset");
-		Date d=new Date();
+		launchUrl(getData(3, 5, 1));
+		Date d = new Date();
 		System.out.println(d);
 	}
-	
-	/*@Test(groups="smoke")
-	public void popupFunctionalityTest4() {
-		HomepagePojo hp=new HomepagePojo();
-		WebElement acceptAll = hp.getAcceptAll();
-		Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
-		acceptAll.click();
-	}*/
-	
-	@Test(groups="smoke")
+
+	/*
+	 * @Test(groups="smoke") public void popupFunctionalityTest4() { HomepagePojo
+	 * hp=new HomepagePojo(); WebElement acceptAll = hp.getAcceptAll();
+	 * Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
+	 * acceptAll.click(); }
+	 */
+    
+	// giving invalid mail id
+	@Test(groups = "smoke")
 	public void testCase1() {
-		ForgottenPasswordPojo fpf=new ForgottenPasswordPojo();
+		ForgottenPasswordPojo fpf = new ForgottenPasswordPojo();
 		fpf.getTxtFPUsername().sendKeys(getData(1, 6, 0));
 		fpf.getBtnReset().click();
 		Assert.assertTrue(fpf.getInvalidMailIdMessage().getText().contains("valid email"));
 	}
-	
-	@AfterMethod(groups="smoke")
+
+	@AfterMethod(groups = "smoke")
 	public void endTime() {
-		Date d= new Date();
+		Date d = new Date();
 		System.out.println(d);
 	}
-	
-	@AfterClass(alwaysRun=true)
+
+	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
-		SearchBoxFunctionality sbf=new SearchBoxFunctionality();
+		/* closeBrowser(); */
+		SearchBoxFunctionality sbf = new SearchBoxFunctionality();
 	}
-	
 
 }

@@ -19,17 +19,17 @@ import org.utilities.HomepagePojo;
 import org.utilities.SignInPagePojo;
 
 public class TestingSingInSinario extends BaseClass {
-	
-	@BeforeClass(alwaysRun=true)
+
+	@BeforeClass(alwaysRun = true)
 	public void startingBrowser() {
-		/*launchChrome();
-		chromeObject();
-		winMax();*/
+		/*
+		 * launchChrome(); chromeObject(); winMax();
+		 */
 		System.out.println("TestingSingInSinario started");
 	}
 
 	/**/@Parameters({ "signInPage" })
-	@BeforeMethod(groups="smoke")
+	@BeforeMethod(groups = "smoke")
 	public void startTime(/**/String url) {
 		implicitWaiting();
 		launchUrl(url);
@@ -37,16 +37,15 @@ public class TestingSingInSinario extends BaseClass {
 		System.out.println(d);
 	}
 
-	/*@Test(groups="smoke")
-	public void popupFunctionalityTest2() {
-		HomepagePojo hp = new HomepagePojo();
-		WebElement acceptAll = hp.getAcceptAll();
-		Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
-		acceptAll.click();
-	}*/
+	/*
+	 * @Test(groups="smoke") public void popupFunctionalityTest2() { HomepagePojo hp
+	 * = new HomepagePojo(); WebElement acceptAll = hp.getAcceptAll();
+	 * Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
+	 * acceptAll.click(); }
+	 */
 
 	// invalid username and invalid username
-	@Test(groups="smoke")
+	@Test(groups = "smoke")
 	public void testCase1() {
 		SignInPagePojo si = new SignInPagePojo();
 		si.getTxtUserName().sendKeys(getData(1, 3, 0));
@@ -57,7 +56,7 @@ public class TestingSingInSinario extends BaseClass {
 	}
 
 	// long username and invalid password
-	@Test(groups="smoke")
+	@Test(groups = "smoke")
 	public void testCase2() {
 		SignInPagePojo si = new SignInPagePojo();
 		si.getTxtUserName().sendKeys(getData(1, 6, 0));
@@ -68,7 +67,7 @@ public class TestingSingInSinario extends BaseClass {
 	}
 
 	// empty username and invalid password
-	@Test(groups="smoke")
+	@Test(groups = "smoke")
 	public void testCase3() {
 		SignInPagePojo si = new SignInPagePojo();
 		si.getTxtPassword().sendKeys(getData(1, 4, 1));
@@ -78,7 +77,7 @@ public class TestingSingInSinario extends BaseClass {
 	}
 
 	// leaving both username and password as empty
-	@Test(groups="smoke")
+	@Test(groups = "smoke")
 	public void testCase4() {
 		SignInPagePojo si = new SignInPagePojo();
 		si.getBtnLogin().click();
@@ -86,16 +85,17 @@ public class TestingSingInSinario extends BaseClass {
 		Assert.assertTrue(currentUrl.contains("login"));
 	}
 
-	@AfterMethod(groups="smoke")
+	@AfterMethod(groups = "smoke")
 	public void endTime() {
 		Date d = new Date();
 		System.out.println(d);
 	}
 
-	@AfterClass(alwaysRun=true)
+	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
-		forgotPasswordFuntionality fpf=new forgotPasswordFuntionality();
-		
+		/* closeBrowser(); */
+		forgotPasswordFuntionality fpf = new forgotPasswordFuntionality();
+
 	}
 
 }

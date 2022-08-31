@@ -1,37 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="242211" started-at="2022-08-30T09:39:16Z" finished-at="2022-08-30T09:43:19Z">
+  <suite name="Suite" duration-ms="477402" started-at="2022-08-31T12:50:39Z" finished-at="2022-08-31T12:58:36Z">
     <groups>
       <group name="smoke">
-        <method signature="TestingSingInSinario.testCase1()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="testCase1" class="org.projecttoolstation.TestingSingInSinario"/>
-        <method signature="TestingSingInSinario.testCase2()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="testCase2" class="org.projecttoolstation.TestingSingInSinario"/>
-        <method signature="TestingSingInSinario.testCase3()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="testCase3" class="org.projecttoolstation.TestingSingInSinario"/>
-        <method signature="TestingSingInSinario.testCase4()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="testCase4" class="org.projecttoolstation.TestingSingInSinario"/>
-        <method signature="forgotPasswordFuntionality.testCase1()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@42d80b78]" name="testCase1" class="org.projecttoolstation.forgotPasswordFuntionality"/>
-        <method signature="homePageTesting.testCase2()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="testCase2" class="org.projecttoolstation.homePageTesting"/>
-        <method signature="homePageTesting.testcase1()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="testcase1" class="org.projecttoolstation.homePageTesting"/>
-        <method signature="homePageTesting.testcase3()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="testcase3" class="org.projecttoolstation.homePageTesting"/>
-        <method signature="homePageTesting.testcase4()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="testcase4" class="org.projecttoolstation.homePageTesting"/>
-        <method signature="signUpFunctionality.testCase1()[pri:0, instance:org.projecttoolstation.signUpFunctionality@77caeb3e]" name="testCase1" class="org.projecttoolstation.signUpFunctionality"/>
+        <method signature="TestingSingInSinario.testCase1()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="testCase1" class="org.projecttoolstation.TestingSingInSinario"/>
+        <method signature="TestingSingInSinario.testCase2()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="testCase2" class="org.projecttoolstation.TestingSingInSinario"/>
+        <method signature="TestingSingInSinario.testCase3()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="testCase3" class="org.projecttoolstation.TestingSingInSinario"/>
+        <method signature="TestingSingInSinario.testCase4()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="testCase4" class="org.projecttoolstation.TestingSingInSinario"/>
+        <method signature="Trolleyfunctionality.testCase1()[pri:0, instance:org.projecttoolstation.Trolleyfunctionality@5e3a8624]" name="testCase1" class="org.projecttoolstation.Trolleyfunctionality"/>
+        <method signature="forgotPasswordFuntionality.testCase1()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@3bfdc050]" name="testCase1" class="org.projecttoolstation.forgotPasswordFuntionality"/>
+        <method signature="homePageTesting.testCase2()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="testCase2" class="org.projecttoolstation.homePageTesting"/>
+        <method signature="homePageTesting.testcase1()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="testcase1" class="org.projecttoolstation.homePageTesting"/>
+        <method signature="homePageTesting.testcase3()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="testcase3" class="org.projecttoolstation.homePageTesting"/>
+        <method signature="homePageTesting.testcase4()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="testcase4" class="org.projecttoolstation.homePageTesting"/>
+        <method signature="signUpFunctionality.testCase1()[pri:0, instance:org.projecttoolstation.signUpFunctionality@1e88b3c]" name="testCase1" class="org.projecttoolstation.signUpFunctionality"/>
       </group> <!-- smoke -->
       <group name="retest">
-        <method signature="SearchBoxFunctionality.testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="testCase1" class="org.projecttoolstation.SearchBoxFunctionality"/>
-        <method signature="homePageTesting.popupFunctionalityTest1()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="popupFunctionalityTest1" class="org.projecttoolstation.homePageTesting"/>
+        <method signature="SearchBoxFunctionality.testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="testCase1" class="org.projecttoolstation.SearchBoxFunctionality"/>
+        <method signature="homePageTesting.popupFunctionalityTest1()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="popupFunctionalityTest1" class="org.projecttoolstation.homePageTesting"/>
       </group> <!-- retest -->
     </groups>
-    <test name="Test" duration-ms="242211" started-at="2022-08-30T09:39:16Z" finished-at="2022-08-30T09:43:19Z">
+    <test name="Test" duration-ms="477402" started-at="2022-08-31T12:50:39Z" finished-at="2022-08-31T12:58:36Z">
+      <class name="org.projecttoolstation.forgotPasswordFuntionality">
+        <test-method status="PASS" signature="startingBowser()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@3bfdc050]" name="startingBowser" is-config="true" duration-ms="1" started-at="2022-08-31T12:54:59Z" finished-at="2022-08-31T12:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startingBowser -->
+        <test-method status="PASS" signature="starTime()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@3bfdc050]" name="starTime" is-config="true" duration-ms="10911" started-at="2022-08-31T12:54:59Z" finished-at="2022-08-31T12:55:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starTime -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@3bfdc050]" name="testCase1" duration-ms="10962" started-at="2022-08-31T12:55:09Z" finished-at="2022-08-31T12:55:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@3bfdc050]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:55:20Z" finished-at="2022-08-31T12:55:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTime -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@3bfdc050]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2022-08-31T12:55:20Z" finished-at="2022-08-31T12:55:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- org.projecttoolstation.forgotPasswordFuntionality -->
       <class name="org.projecttoolstation.SearchBoxFunctionality">
-        <test-method status="PASS" signature="startingBrowser()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="startingBrowser" is-config="true" duration-ms="1" started-at="2022-08-30T09:41:45Z" finished-at="2022-08-30T09:41:45Z">
+        <test-method status="PASS" signature="startingBrowser()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="startingBrowser" is-config="true" duration-ms="0" started-at="2022-08-31T12:55:20Z" finished-at="2022-08-31T12:55:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startingBrowser -->
-        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="startTime" is-config="true" duration-ms="8744" started-at="2022-08-30T09:41:46Z" finished-at="2022-08-30T09:41:55Z">
+        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="startTime" is-config="true" duration-ms="10545" started-at="2022-08-31T12:55:21Z" finished-at="2022-08-31T12:55:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="testCase1" duration-ms="23095" started-at="2022-08-30T09:41:55Z" data-provider="searchByItems" finished-at="2022-08-30T09:42:18Z">
+        <test-method status="PASS" signature="testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="testCase1" duration-ms="43196" started-at="2022-08-31T12:55:32Z" data-provider="searchByItems" finished-at="2022-08-31T12:56:15Z">
           <params>
             <param index="0">
               <value>
@@ -42,15 +65,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:42:18Z" finished-at="2022-08-30T09:42:18Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:56:15Z" finished-at="2022-08-31T12:56:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="startTime" is-config="true" duration-ms="5318" started-at="2022-08-30T09:42:18Z" finished-at="2022-08-30T09:42:23Z">
+        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="startTime" is-config="true" duration-ms="13758" started-at="2022-08-31T12:56:15Z" finished-at="2022-08-31T12:56:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="testCase1" duration-ms="18677" started-at="2022-08-30T09:42:23Z" data-provider="searchByItems" finished-at="2022-08-30T09:42:42Z">
+        <test-method status="PASS" signature="testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="testCase1" duration-ms="17032" started-at="2022-08-31T12:56:29Z" data-provider="searchByItems" finished-at="2022-08-31T12:56:46Z">
           <params>
             <param index="0">
               <value>
@@ -61,15 +84,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="endTime" is-config="true" duration-ms="0" started-at="2022-08-30T09:42:42Z" finished-at="2022-08-30T09:42:42Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:56:46Z" finished-at="2022-08-31T12:56:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="startTime" is-config="true" duration-ms="6952" started-at="2022-08-30T09:42:42Z" finished-at="2022-08-30T09:42:49Z">
+        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="startTime" is-config="true" duration-ms="9602" started-at="2022-08-31T12:56:46Z" finished-at="2022-08-31T12:56:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="testCase1" duration-ms="11264" started-at="2022-08-30T09:42:49Z" data-provider="searchByItems" finished-at="2022-08-30T09:43:00Z">
+        <test-method status="PASS" signature="testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="testCase1" duration-ms="12584" started-at="2022-08-31T12:56:55Z" data-provider="searchByItems" finished-at="2022-08-31T12:57:08Z">
           <params>
             <param index="0">
               <value>
@@ -80,15 +103,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="endTime" is-config="true" duration-ms="0" started-at="2022-08-30T09:43:00Z" finished-at="2022-08-30T09:43:00Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:57:08Z" finished-at="2022-08-31T12:57:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="startTime" is-config="true" duration-ms="5977" started-at="2022-08-30T09:43:00Z" finished-at="2022-08-30T09:43:06Z">
+        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="startTime" is-config="true" duration-ms="7445" started-at="2022-08-31T12:57:08Z" finished-at="2022-08-31T12:57:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="testCase1" duration-ms="11202" started-at="2022-08-30T09:43:06Z" data-provider="searchByItems" finished-at="2022-08-30T09:43:17Z">
+        <test-method status="PASS" signature="testCase1(java.lang.String)[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="testCase1" duration-ms="12787" started-at="2022-08-31T12:57:15Z" data-provider="searchByItems" finished-at="2022-08-31T12:57:28Z">
           <params>
             <param index="0">
               <value>
@@ -99,84 +122,65 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:43:17Z" finished-at="2022-08-30T09:43:17Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:57:28Z" finished-at="2022-08-31T12:57:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@3bfdc050]" name="quitBrowser" is-config="true" duration-ms="1596" started-at="2022-08-30T09:43:17Z" finished-at="2022-08-30T09:43:19Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.SearchBoxFunctionality@1bce4f0a]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2022-08-31T12:57:28Z" finished-at="2022-08-31T12:57:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- org.projecttoolstation.SearchBoxFunctionality -->
-      <class name="org.projecttoolstation.forgotPasswordFuntionality">
-        <test-method status="PASS" signature="startingBowser()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@42d80b78]" name="startingBowser" is-config="true" duration-ms="1" started-at="2022-08-30T09:41:30Z" finished-at="2022-08-30T09:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startingBowser -->
-        <test-method status="PASS" signature="starTime()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@42d80b78]" name="starTime" is-config="true" duration-ms="7083" started-at="2022-08-30T09:41:30Z" finished-at="2022-08-30T09:41:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- starTime -->
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@42d80b78]" name="testCase1" duration-ms="8409" started-at="2022-08-30T09:41:37Z" finished-at="2022-08-30T09:41:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@42d80b78]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:41:45Z" finished-at="2022-08-30T09:41:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.forgotPasswordFuntionality@42d80b78]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2022-08-30T09:41:45Z" finished-at="2022-08-30T09:41:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- org.projecttoolstation.forgotPasswordFuntionality -->
       <class name="org.projecttoolstation.signUpFunctionality">
-        <test-method status="PASS" signature="startingBrowser()[pri:0, instance:org.projecttoolstation.signUpFunctionality@77caeb3e]" name="startingBrowser" is-config="true" duration-ms="0" started-at="2022-08-30T09:40:20Z" finished-at="2022-08-30T09:40:20Z">
+        <test-method status="PASS" signature="startingBrowser()[pri:0, instance:org.projecttoolstation.signUpFunctionality@1e88b3c]" name="startingBrowser" is-config="true" duration-ms="1" started-at="2022-08-31T12:53:13Z" finished-at="2022-08-31T12:53:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startingBrowser -->
-        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.signUpFunctionality@77caeb3e]" name="startTime" is-config="true" duration-ms="4822" started-at="2022-08-30T09:40:20Z" finished-at="2022-08-30T09:40:25Z">
+        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.signUpFunctionality@1e88b3c]" name="startTime" is-config="true" duration-ms="8991" started-at="2022-08-31T12:53:13Z" finished-at="2022-08-31T12:53:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:org.projecttoolstation.signUpFunctionality@77caeb3e]" name="testCase1" duration-ms="14997" started-at="2022-08-30T09:40:25Z" finished-at="2022-08-30T09:40:40Z">
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:org.projecttoolstation.signUpFunctionality@1e88b3c]" name="testCase1" duration-ms="21687" started-at="2022-08-31T12:53:22Z" finished-at="2022-08-31T12:53:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.signUpFunctionality@77caeb3e]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:40:40Z" finished-at="2022-08-30T09:40:40Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.signUpFunctionality@1e88b3c]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:53:44Z" finished-at="2022-08-31T12:53:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.signUpFunctionality@77caeb3e]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2022-08-30T09:40:40Z" finished-at="2022-08-30T09:40:40Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.signUpFunctionality@1e88b3c]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2022-08-31T12:53:44Z" finished-at="2022-08-31T12:53:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- org.projecttoolstation.signUpFunctionality -->
-      <class name="org.projecttoolstation.TestingSingInSinario">
-        <test-method status="PASS" signature="startingBrowser()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="startingBrowser" is-config="true" duration-ms="1" started-at="2022-08-30T09:40:40Z" finished-at="2022-08-30T09:40:40Z">
+      <class name="org.projecttoolstation.Trolleyfunctionality">
+        <test-method status="PASS" signature="Startingbrowser()[pri:0, instance:org.projecttoolstation.Trolleyfunctionality@5e3a8624]" name="Startingbrowser" is-config="true" duration-ms="0" started-at="2022-08-31T12:57:28Z" finished-at="2022-08-31T12:57:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startingBrowser -->
-        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="startTime" is-config="true" duration-ms="4560" started-at="2022-08-30T09:40:40Z" finished-at="2022-08-30T09:40:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.toolstation.com/login]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Startingbrowser -->
+        <test-method status="PASS" signature="startTime()[pri:0, instance:org.projecttoolstation.Trolleyfunctionality@5e3a8624]" name="startTime" is-config="true" duration-ms="15273" started-at="2022-08-31T12:57:28Z" finished-at="2022-08-31T12:57:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="testCase1" duration-ms="16019" started-at="2022-08-30T09:40:44Z" finished-at="2022-08-30T09:41:00Z">
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:org.projecttoolstation.Trolleyfunctionality@5e3a8624]" name="testCase1" duration-ms="51051" started-at="2022-08-31T12:57:43Z" finished-at="2022-08-31T12:58:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:41:00Z" finished-at="2022-08-30T09:41:00Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.Trolleyfunctionality@5e3a8624]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:58:34Z" finished-at="2022-08-31T12:58:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="startTime" is-config="true" duration-ms="4247" started-at="2022-08-30T09:41:00Z" finished-at="2022-08-30T09:41:05Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.Trolleyfunctionality@5e3a8624]" name="quitBrowser" is-config="true" duration-ms="1686" started-at="2022-08-31T12:58:34Z" finished-at="2022-08-31T12:58:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- org.projecttoolstation.Trolleyfunctionality -->
+      <class name="org.projecttoolstation.TestingSingInSinario">
+        <test-method status="PASS" signature="startingBrowser()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="startingBrowser" is-config="true" duration-ms="0" started-at="2022-08-31T12:53:44Z" finished-at="2022-08-31T12:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startingBrowser -->
+        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="startTime" is-config="true" duration-ms="16474" started-at="2022-08-31T12:53:44Z" finished-at="2022-08-31T12:54:00Z">
           <params>
             <param index="0">
               <value>
@@ -187,15 +191,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase2()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="testCase2" duration-ms="10036" started-at="2022-08-30T09:41:05Z" finished-at="2022-08-30T09:41:15Z">
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="testCase1" duration-ms="6029" started-at="2022-08-31T12:54:00Z" finished-at="2022-08-31T12:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:54:06Z" finished-at="2022-08-31T12:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTime -->
+        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="startTime" is-config="true" duration-ms="10577" started-at="2022-08-31T12:54:06Z" finished-at="2022-08-31T12:54:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.toolstation.com/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTime -->
+        <test-method status="PASS" signature="testCase2()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="testCase2" duration-ms="18868" started-at="2022-08-31T12:54:17Z" finished-at="2022-08-31T12:54:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:41:15Z" finished-at="2022-08-30T09:41:15Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:54:36Z" finished-at="2022-08-31T12:54:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="startTime" is-config="true" duration-ms="5910" started-at="2022-08-30T09:41:15Z" finished-at="2022-08-30T09:41:21Z">
+        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="startTime" is-config="true" duration-ms="7872" started-at="2022-08-31T12:54:36Z" finished-at="2022-08-31T12:54:44Z">
           <params>
             <param index="0">
               <value>
@@ -206,11 +229,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase3()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="testCase3" duration-ms="1416" started-at="2022-08-30T09:41:21Z" finished-at="2022-08-30T09:41:22Z">
+        <test-method status="PASS" signature="testCase3()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="testCase3" duration-ms="1003" started-at="2022-08-31T12:54:44Z" finished-at="2022-08-31T12:54:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase3 -->
-        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="startTime" is-config="true" duration-ms="7176" started-at="2022-08-30T09:41:22Z" finished-at="2022-08-30T09:41:29Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="endTime" is-config="true" duration-ms="0" started-at="2022-08-31T12:54:45Z" finished-at="2022-08-31T12:54:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTime -->
+        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="startTime" is-config="true" duration-ms="13504" started-at="2022-08-31T12:54:45Z" finished-at="2022-08-31T12:54:58Z">
           <params>
             <param index="0">
               <value>
@@ -221,29 +248,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="endTime" is-config="true" duration-ms="0" started-at="2022-08-30T09:41:22Z" finished-at="2022-08-30T09:41:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="testCase4()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="testCase4" duration-ms="579" started-at="2022-08-30T09:41:29Z" finished-at="2022-08-30T09:41:30Z">
+        <test-method status="PASS" signature="testCase4()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="testCase4" duration-ms="397" started-at="2022-08-31T12:54:58Z" finished-at="2022-08-31T12:54:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase4 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:41:30Z" finished-at="2022-08-30T09:41:30Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:54:59Z" finished-at="2022-08-31T12:54:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@1e88b3c]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2022-08-30T09:41:30Z" finished-at="2022-08-30T09:41:30Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.TestingSingInSinario@42d80b78]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2022-08-31T12:54:59Z" finished-at="2022-08-31T12:54:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- org.projecttoolstation.TestingSingInSinario -->
       <class name="org.projecttoolstation.homePageTesting">
-        <test-method status="PASS" signature="startingBrowser()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="startingBrowser" is-config="true" duration-ms="6975" started-at="2022-08-30T09:39:16Z" finished-at="2022-08-30T09:39:23Z">
+        <test-method status="PASS" signature="startingBrowser()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="startingBrowser" is-config="true" duration-ms="27010" started-at="2022-08-31T12:50:39Z" finished-at="2022-08-31T12:51:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startingBrowser -->
-        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="startTime" is-config="true" duration-ms="12516" started-at="2022-08-30T09:39:23Z" finished-at="2022-08-30T09:39:36Z">
+        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="startTime" is-config="true" duration-ms="24845" started-at="2022-08-31T12:51:06Z" finished-at="2022-08-31T12:51:31Z">
           <params>
             <param index="0">
               <value>
@@ -254,15 +277,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="popupFunctionalityTest1()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="popupFunctionalityTest1" duration-ms="839" started-at="2022-08-30T09:39:36Z" finished-at="2022-08-30T09:39:37Z">
+        <test-method status="PASS" signature="popupFunctionalityTest1()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="popupFunctionalityTest1" duration-ms="3094" started-at="2022-08-31T12:51:31Z" finished-at="2022-08-31T12:51:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- popupFunctionalityTest1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:39:37Z" finished-at="2022-08-30T09:39:37Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="endTime" is-config="true" duration-ms="0" started-at="2022-08-31T12:51:34Z" finished-at="2022-08-31T12:51:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="startTime" is-config="true" duration-ms="8260" started-at="2022-08-30T09:39:37Z" finished-at="2022-08-30T09:39:45Z">
+        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="startTime" is-config="true" duration-ms="45168" started-at="2022-08-31T12:51:34Z" finished-at="2022-08-31T12:52:19Z">
           <params>
             <param index="0">
               <value>
@@ -273,15 +296,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase2()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="testCase2" duration-ms="2002" started-at="2022-08-30T09:39:45Z" finished-at="2022-08-30T09:39:47Z">
+        <test-method status="PASS" signature="testCase2()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="testCase2" duration-ms="12540" started-at="2022-08-31T12:52:19Z" finished-at="2022-08-31T12:52:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="endTime" is-config="true" duration-ms="2" started-at="2022-08-30T09:39:47Z" finished-at="2022-08-30T09:39:47Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="endTime" is-config="true" duration-ms="0" started-at="2022-08-31T12:52:32Z" finished-at="2022-08-31T12:52:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="startTime" is-config="true" duration-ms="9155" started-at="2022-08-30T09:39:47Z" finished-at="2022-08-30T09:39:56Z">
+        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="startTime" is-config="true" duration-ms="16067" started-at="2022-08-31T12:52:32Z" finished-at="2022-08-31T12:52:48Z">
           <params>
             <param index="0">
               <value>
@@ -292,15 +315,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testcase1()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="testcase1" duration-ms="777" started-at="2022-08-30T09:39:56Z" finished-at="2022-08-30T09:39:57Z">
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="testcase1" duration-ms="1227" started-at="2022-08-31T12:52:48Z" finished-at="2022-08-31T12:52:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:39:57Z" finished-at="2022-08-30T09:39:57Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:52:49Z" finished-at="2022-08-31T12:52:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="startTime" is-config="true" duration-ms="5688" started-at="2022-08-30T09:39:57Z" finished-at="2022-08-30T09:40:03Z">
+        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="startTime" is-config="true" duration-ms="12977" started-at="2022-08-31T12:52:49Z" finished-at="2022-08-31T12:53:02Z">
           <params>
             <param index="0">
               <value>
@@ -311,15 +334,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testcase3()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="testcase3" duration-ms="5423" started-at="2022-08-30T09:40:03Z" finished-at="2022-08-30T09:40:08Z">
+        <test-method status="PASS" signature="testcase3()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="testcase3" duration-ms="1826" started-at="2022-08-31T12:53:02Z" finished-at="2022-08-31T12:53:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase3 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-30T09:40:08Z" finished-at="2022-08-30T09:40:08Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:53:04Z" finished-at="2022-08-31T12:53:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="startTime" is-config="true" duration-ms="4759" started-at="2022-08-30T09:40:08Z" finished-at="2022-08-30T09:40:13Z">
+        <test-method status="PASS" signature="startTime(java.lang.String)[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="startTime" is-config="true" duration-ms="7081" started-at="2022-08-31T12:53:04Z" finished-at="2022-08-31T12:53:11Z">
           <params>
             <param index="0">
               <value>
@@ -330,15 +353,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testcase4()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="testcase4" duration-ms="7035" started-at="2022-08-30T09:40:13Z" finished-at="2022-08-30T09:40:20Z">
+        <test-method status="PASS" signature="testcase4()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="testcase4" duration-ms="2361" started-at="2022-08-31T12:53:11Z" finished-at="2022-08-31T12:53:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase4 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="endTime" is-config="true" duration-ms="0" started-at="2022-08-30T09:40:20Z" finished-at="2022-08-30T09:40:20Z">
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="endTime" is-config="true" duration-ms="1" started-at="2022-08-31T12:53:13Z" finished-at="2022-08-31T12:53:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.homePageTesting@66a3ffec]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2022-08-30T09:40:20Z" finished-at="2022-08-30T09:40:20Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:org.projecttoolstation.homePageTesting@77caeb3e]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2022-08-31T12:53:13Z" finished-at="2022-08-31T12:53:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

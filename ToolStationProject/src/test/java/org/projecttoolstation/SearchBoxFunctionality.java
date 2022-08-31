@@ -22,37 +22,38 @@ import org.utilities.HomepagePojo;
 
 import net.bytebuddy.utility.privilege.GetSystemPropertyAction;
 
-public class SearchBoxFunctionality extends BaseClass{
-	
-	
-	@BeforeClass(alwaysRun=true)
+public class SearchBoxFunctionality extends BaseClass {
+
+	@BeforeClass(alwaysRun = true)
 	public void startingBrowser() {
-		/*launchChrome();
-		chromeObject();
-		winMax();*/
+		/* 
+		 launchChrome(); chromeObject(); winMax();*/
+		
 		System.out.println("SearchBoxFunctionality started");
 	}
-	
-	@BeforeMethod(groups="retest")
+
+	@BeforeMethod(groups = "retest")
 	public void startTime() {
 		implicitWaiting();
 		launchUrl(getData(3, 1, 1));
-		Date d=new Date();
+		Date d = new Date();
 		System.out.println(d);
 	}
-	
-	/*@Test(groups="smoke")
+
+	/* 
+	@Test(groups = "smoke")
 	public void popupFunctionalityTest3() {
-		HomepagePojo hp=new HomepagePojo();
+		HomepagePojo hp = new HomepagePojo();
 		WebElement acceptAll = hp.getAcceptAll();
 		Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
 		acceptAll.click();
 	}*/
-	
-	@Test(dataProvider="searchByItems", dataProviderClass=org.utilities.dataProviderr.class, groups="retest")
+
+	// passing different product name in search box
+	@Test(dataProvider = "searchByItems", dataProviderClass = org.utilities.dataProviderr.class, groups = "retest")
 	public void testCase1(String SearchByItems) {
 		implicitWaiting();
-		HomepagePojo hp=new HomepagePojo();
+		HomepagePojo hp = new HomepagePojo();
 		hp.getSearchBox().sendKeys(SearchByItems);
 		hp.getSearchBtn().click();
 		staticWait(10000);
@@ -69,22 +70,22 @@ public class SearchBoxFunctionality extends BaseClass{
 		} else {
 			implicitWaiting();
 			Assert.assertTrue(driver.getCurrentUrl().contains("water"));
-		} 
-		
+		}
+
 	}
-	
-	@AfterMethod(groups="retest")
+
+	@AfterMethod(groups = "retest")
 	public void endTime() {
 		Date d = new Date();
 		System.out.println(d);
-		
-	}
-	
-	@AfterClass(alwaysRun=true)
-	public void quitBrowser() {
-		closeBrowser();
-		
+
 	}
 
+	@AfterClass(alwaysRun = true)
+	public void quitBrowser() {
+		/* closeBrowser(); */
+		Trolleyfunctionality tf = new Trolleyfunctionality();
+
+	}
 
 }
