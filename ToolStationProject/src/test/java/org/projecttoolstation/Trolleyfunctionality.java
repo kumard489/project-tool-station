@@ -51,27 +51,26 @@ public class Trolleyfunctionality extends BaseClass {
 		moveCursorActions(hp.getDepartments());
 		moveCursorActions(hp.getConstructionAndInsulation());
 		SingleClkActions(hp.getConstructionAndInsulation());
-		sf.assertTrue(driver.getCurrentUrl().contains("construction-insulation"), "Construction-insulation is Tracked");
+		sf.assertTrue(driver.getCurrentUrl().contains("construction-insulation"));
 		// clicking Site Equipment
 		ConstrunctionAndInsulationPojo cai = new ConstrunctionAndInsulationPojo();
 		jsScroll(cai.getDampProofing());
 		jsClick(cai.getSiteEquipment());
-		sf.assertTrue(driver.getCurrentUrl().contains("site-equipment"), "Site-equipment is Tracked");
+		sf.assertTrue(driver.getCurrentUrl().contains("site-equipment"));
 		// clicking product
 		jsScroll(cai.getConcreteMixer());
 		jsClick(cai.getConcreteMixer());
-		sf.assertTrue(driver.getCurrentUrl().contains("p52210"), "Product code: 52210 is Tracked");
+		sf.assertTrue(driver.getCurrentUrl().contains("p52210"));
 		// clicking delivery
 		cai.getDelivery().click();
-		sf.assertTrue(cai.getPopUpTrolleyForDelivery().getText().contains("added"),
-				"trolley for delivery is Tracked");
+		sf.assertTrue(cai.getPopUpTrolleyForDelivery().getText().contains("added"));
 		// clicking trolley to add that product
 		cai.getPrdctTrolley().click();
-		sf.assertTrue(driver.getCurrentUrl().contains("trolley"), "Trolley got Tracked");
-		sf.assertTrue(cai.getProductConformation().getText().contains("52210"), "Product is added in trolley(cart)");
+		sf.assertTrue(driver.getCurrentUrl().contains("trolley"));
+		sf.assertTrue(cai.getProductConformation().getText().contains("52210"));
 		// removing product from trolley
 		cai.getRemoveButton().click();
-		sf.assertTrue(cai.getRemovedMessage().getText().contains("Removed"), "Removed got Tracked");
+		sf.assertTrue(cai.getRemovedMessage().getText().contains("Removed"));
 
 		sf.assertAll();
 	}
