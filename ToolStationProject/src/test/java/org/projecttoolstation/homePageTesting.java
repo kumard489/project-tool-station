@@ -44,7 +44,7 @@ public class homePageTesting extends BaseClass {
 		acceptAll.click();
 	}
 
-	// checking setbranch UI
+	// checking set branch UI
 	@Test(groups = "smoke")
 	public void testcase1() {
 		HomepagePojo hp = new HomepagePojo();

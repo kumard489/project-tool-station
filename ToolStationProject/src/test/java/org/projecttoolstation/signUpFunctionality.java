@@ -29,13 +29,14 @@ public class signUpFunctionality extends BaseClass {
 		Date d = new Date();
 		System.out.println(d);
 	}
+	
 	/*
 	 * @Test(groups="smoke") public void popupFunctionalityTest4() { HomepagePojo
 	 * hp=new HomepagePojo(); WebElement acceptAll = hp.getAcceptAll();
 	 * Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
 	 * acceptAll.click(); }
 	 */
-    
+
 	// filling mandatory text box and giving short password
 	@Test(groups = "smoke")
 	public void testCase1() {

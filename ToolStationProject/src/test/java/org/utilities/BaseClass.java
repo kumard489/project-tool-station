@@ -405,56 +405,56 @@ public class BaseClass {
 
 	// 49
 	public static void selectingDropdownIndex(WebElement sdiTarget, int index) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(sdiTarget);
 		slct.selectByIndex(index);
 	}
 
 	// 50
 	public static void selectingDropdownText(WebElement sdtTarget, String visibleTxt) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(sdtTarget);
 		slct.selectByVisibleText(visibleTxt);
 	}
 
 	// 51
 	public static void selectingDropdownValue(WebElement sdvTarget, String value) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(sdvTarget);
 		slct.selectByValue(value);
 	}
 
 	// 52
 	public static void deselectingDropdownIndex(WebElement dsiTarget, int index) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(dsiTarget);
 		slct.selectByIndex(index);
 	}
 
 	// 53
 	public static void deselectingDropdownText(WebElement dstTarget, String visibleTxt) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(dstTarget);
 		slct.selectByVisibleText(visibleTxt);
 	}
 
 	// 54
 	public static void deselectingDropdownValue(WebElement dsvTarget, String value) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(dsvTarget);
 		slct.selectByValue(value);
 	}
 
 	// 55
 	public static void isMultiSelectDropdown(WebElement msTarget) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(msTarget);
 		System.out.println(slct.isMultiple());
 	}
 
 	// 56
 	public static void getOptionsInDropdown(WebElement oTarget) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(oTarget);
 		List<WebElement> allOptions = slct.getOptions();
 		for (int i = 0; i < allOptions.size(); i++) {
@@ -464,7 +464,7 @@ public class BaseClass {
 
 	// 57
 	public static void getAllSelectedOptionsInDropdown(WebElement asoTarget) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(asoTarget);
 		List<WebElement> allSelectedOptions = slct.getAllSelectedOptions();
 		for (int i = 0; i < allSelectedOptions.size(); i++) {
@@ -474,14 +474,14 @@ public class BaseClass {
 
 	// 58
 	public static void get1stSelectedOptionInDropdown(WebElement fsoTarget) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(fsoTarget);
 		System.out.println(slct.getFirstSelectedOption().getText());
 	}
 
 	// 59
 	public static void deselectAllInDropdown(WebElement daTarget) {
-		//WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
+		// WebElement drpDwn = driver.findElement(By.xpath(elementXpath));
 		slct = new Select(daTarget);
 		slct.deselectAll();
 	}
@@ -613,8 +613,9 @@ public class BaseClass {
 	// 74
 	public static String getCellValueWithDate(String fileName, int sheetIndex, int rowIndex, int cellIndex,
 			String dateFrmt) {
-		File f = new File("C:\\Users\\shpra\\git\\project-tool-station\\ToolStationProject\\src\\test\\resources\\Test_Data\\" + fileName
-				+ ".xlsx");
+		File f = new File(
+				"C:\\Users\\shpra\\git\\project-tool-station\\ToolStationProject\\src\\test\\resources\\Test_Data\\"
+						+ fileName + ".xlsx");
 		String data = "";
 		try {
 			fis = new FileInputStream(f);
@@ -743,17 +744,7 @@ public class BaseClass {
 		String data = getCellValueWithDate("testdata", sheetIndex, rowIndex, cellIndex, "dd-MMMM-yyyy");
 		return data;
 	}
-	
-	//79
-	 
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	// 79
 
 }

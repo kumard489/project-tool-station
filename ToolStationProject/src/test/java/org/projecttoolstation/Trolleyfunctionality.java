@@ -19,9 +19,8 @@ public class Trolleyfunctionality extends BaseClass {
 	@BeforeClass(alwaysRun = true)
 	public void Startingbrowser() {
 		/*
-		launchChrome();
-		chromeObject();
-		winMax();*/
+		 * launchChrome(); chromeObject(); winMax();
+		 */
 
 		System.out.println("Trolleyfunctionality started");
 	}
@@ -33,15 +32,15 @@ public class Trolleyfunctionality extends BaseClass {
 		System.out.println(d);
 	}
 
-	/* // accepting cookies
-	@Test(groups = "smoke")
-	public void popupFunctionalityTest1() {
-		HomepagePojo hp = new HomepagePojo();
-		WebElement acceptAll = hp.getAcceptAll();
-		Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
-		acceptAll.click();
-	}*/
-    
+	/*
+	 * // accepting cookies
+	 * 
+	 * @Test(groups = "smoke") public void popupFunctionalityTest1() { HomepagePojo
+	 * hp = new HomepagePojo(); WebElement acceptAll = hp.getAcceptAll();
+	 * Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
+	 * acceptAll.click(); }
+	 */
+
 	@Test(groups = "smoke")
 	public void testCase1() {
 		implicitWaiting();

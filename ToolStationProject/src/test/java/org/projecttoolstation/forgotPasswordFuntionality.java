@@ -37,7 +37,7 @@ public class forgotPasswordFuntionality extends BaseClass {
 	 * Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
 	 * acceptAll.click(); }
 	 */
-    
+
 	// giving invalid mail id
 	@Test(groups = "smoke")
 	public void testCase1() {

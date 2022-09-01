@@ -26,9 +26,10 @@ public class SearchBoxFunctionality extends BaseClass {
 
 	@BeforeClass(alwaysRun = true)
 	public void startingBrowser() {
-		/* 
-		 launchChrome(); chromeObject(); winMax();*/
-		
+		/*
+		 * launchChrome(); chromeObject(); winMax();
+		 */
+
 		System.out.println("SearchBoxFunctionality started");
 	}
 
@@ -40,14 +41,12 @@ public class SearchBoxFunctionality extends BaseClass {
 		System.out.println(d);
 	}
 
-	/* 
-	@Test(groups = "smoke")
-	public void popupFunctionalityTest3() {
-		HomepagePojo hp = new HomepagePojo();
-		WebElement acceptAll = hp.getAcceptAll();
-		Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
-		acceptAll.click();
-	}*/
+	/*
+	 * @Test(groups = "smoke") public void popupFunctionalityTest3() { HomepagePojo
+	 * hp = new HomepagePojo(); WebElement acceptAll = hp.getAcceptAll();
+	 * Assert.assertTrue(acceptAll.getText().equalsIgnoreCase("Allow all"));
+	 * acceptAll.click(); }
+	 */
 
 	// passing different product name in search box
 	@Test(dataProvider = "searchByItems", dataProviderClass = org.utilities.dataProviderr.class, groups = "retest")
@@ -84,7 +83,6 @@ public class SearchBoxFunctionality extends BaseClass {
 	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
 		/* closeBrowser(); */
-	
 
 	}
 

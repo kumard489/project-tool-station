@@ -44,7 +44,7 @@ public class TestingSingInSinario extends BaseClass {
 	 * acceptAll.click(); }
 	 */
 
-	// invalid username and invalid username
+	// invalid user name and invalid user name
 	@Test(groups = "smoke")
 	public void testCase1() {
 		SignInPagePojo si = new SignInPagePojo();

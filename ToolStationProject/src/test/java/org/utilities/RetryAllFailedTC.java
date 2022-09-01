@@ -11,7 +11,7 @@ public class RetryAllFailedTC implements IAnnotationTransformer {
 
 	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
 		IRetryAnalyzer ra = annotation.getRetryAnalyzer();
-		if(ra==null) {
+		if (ra == null) {
 			annotation.setRetryAnalyzer(RetryFailureTC.class);
 		}
 	}

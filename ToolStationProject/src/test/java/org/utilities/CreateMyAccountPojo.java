@@ -84,17 +84,15 @@ public class CreateMyAccountPojo extends AllPageFooterPojo {
 
 	@FindBy(xpath = "//button[@class='btn btn-success']")
 	private WebElement btnContinue;
-	
-	@FindBy(xpath="//li[contains(text(),'Your chosen password')]")
-	private WebElement shortPasswordMessage;
 
-	
+	@FindBy(xpath = "//li[contains(text(),'Your chosen password')]")
+	private WebElement shortPasswordMessage;
 
 	// getters
 	public WebElement getShortPasswordMessage() {
 		return shortPasswordMessage;
 	}
-	
+
 	public WebElement getSelectTitle() {
 		return selectTitle;
 	}
