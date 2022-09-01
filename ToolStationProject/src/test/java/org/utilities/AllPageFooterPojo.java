@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AllPageFooterPojo extends AllPageHeaderPojo {
 
-	// pagafactory
+	//pagafactory
 	public AllPageFooterPojo() {
 		PageFactory.initElements(driver, this);
 	}
