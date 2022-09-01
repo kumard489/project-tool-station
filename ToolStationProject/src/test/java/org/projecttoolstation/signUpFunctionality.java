@@ -69,7 +69,6 @@ public class signUpFunctionality extends BaseClass {
 	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
 		/* closeBrowser(); */
-		TestingSingInSinario tsi = new TestingSingInSinario();
 	}
 
 }

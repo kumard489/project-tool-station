@@ -94,7 +94,6 @@ public class homePageTesting extends BaseClass {
 	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
 		/* closeBrowser(); */
-		signUpFunctionality suf = new signUpFunctionality();
 	}
 
 }

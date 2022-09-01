@@ -84,7 +84,7 @@ public class SearchBoxFunctionality extends BaseClass {
 	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
 		/* closeBrowser(); */
-		Trolleyfunctionality tf = new Trolleyfunctionality();
+	
 
 	}
 

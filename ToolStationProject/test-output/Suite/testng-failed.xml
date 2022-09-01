@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.utilities.RetryAllFailedTC"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="signInPage" value="https://www.toolstation.com/login"/>
     <parameter name="homePage" value="https://www.toolstation.com/"/>
     <classes>
-      <class name="org.projecttoolstation.Trolleyfunctionality">
-        <methods>
-          <include name="endTime"/>
-          <include name="Startingbrowser"/>
-          <include name="quitBrowser"/>
-          <include name="testCase1"/>
-          <include name="startTime"/>
-        </methods>
-      </class> <!-- org.projecttoolstation.Trolleyfunctionality -->
       <class name="org.projecttoolstation.SearchBoxFunctionality">
         <methods>
           <include name="startingBrowser"/>

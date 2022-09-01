@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods,   16 passed</span>
+                    <span class="method-stats">17 methods,  1 skipped,  16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.SearchBoxFunctionality" hash-for-method="testCase1(spray paint)">testCase1(spray paint)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,17 +121,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.TestingSingInSinario" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.SearchBoxFunctionality" hash-for-method="testCase1(water pump)">testCase1(water pump)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.Trolleyfunctionality" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.signUpFunctionality" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.forgotPasswordFuntionality" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,12 +151,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.forgotPasswordFuntionality" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.Trolleyfunctionality" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.TestingSingInSinario" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.projecttoolstation.signUpFunctionality" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -192,6 +206,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">org.projecttoolstation.SearchBoxFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase1(spray paint)">
+                  </a> <!-- testCase1(spray paint) -->
+                  <span class="method-name">testCase1</span>
+                  <span class="parameters">(spray paint)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.projecttoolstation.SearchBoxFunctionality.testCase1(SearchBoxFunctionality.java:63)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -366,6 +400,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.utilities.RetryAllFailedTC&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;signInPage&quot; value=&quot;https://www.toolstation.com/login&quot;/&gt;
     &lt;parameter name=&quot;homePage&quot; value=&quot;https://www.toolstation.com/&quot;/&gt;
@@ -459,76 +496,80 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(16);
+data.addRows(17);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCase1')
 data.setCell(0, 2, 'org.projecttoolstation.Trolleyfunctionality')
-data.setCell(0, 3, 51051);
+data.setCell(0, 3, 42036);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCase1')
-data.setCell(1, 2, 'org.projecttoolstation.SearchBoxFunctionality')
-data.setCell(1, 3, 43196);
+data.setCell(1, 1, 'testCase2')
+data.setCell(1, 2, 'org.projecttoolstation.homePageTesting')
+data.setCell(1, 3, 18032);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testCase1')
 data.setCell(2, 2, 'org.projecttoolstation.signUpFunctionality')
-data.setCell(2, 3, 21687);
+data.setCell(2, 3, 16928);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCase2')
-data.setCell(3, 2, 'org.projecttoolstation.TestingSingInSinario')
-data.setCell(3, 3, 18868);
+data.setCell(3, 1, 'testCase1')
+data.setCell(3, 2, 'org.projecttoolstation.SearchBoxFunctionality')
+data.setCell(3, 3, 11896);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testCase1')
 data.setCell(4, 2, 'org.projecttoolstation.SearchBoxFunctionality')
-data.setCell(4, 3, 17032);
+data.setCell(4, 3, 11607);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testCase1')
 data.setCell(5, 2, 'org.projecttoolstation.SearchBoxFunctionality')
-data.setCell(5, 3, 12787);
+data.setCell(5, 3, 11288);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testCase1')
 data.setCell(6, 2, 'org.projecttoolstation.SearchBoxFunctionality')
-data.setCell(6, 3, 12584);
+data.setCell(6, 3, 11227);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testCase2')
-data.setCell(7, 2, 'org.projecttoolstation.homePageTesting')
-data.setCell(7, 3, 12540);
+data.setCell(7, 1, 'testCase1')
+data.setCell(7, 2, 'org.projecttoolstation.SearchBoxFunctionality')
+data.setCell(7, 3, 11215);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testCase1')
-data.setCell(8, 2, 'org.projecttoolstation.forgotPasswordFuntionality')
-data.setCell(8, 3, 10962);
+data.setCell(8, 1, 'testcase4')
+data.setCell(8, 2, 'org.projecttoolstation.homePageTesting')
+data.setCell(8, 3, 10041);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'testCase1')
-data.setCell(9, 2, 'org.projecttoolstation.TestingSingInSinario')
-data.setCell(9, 3, 6029);
+data.setCell(9, 2, 'org.projecttoolstation.forgotPasswordFuntionality')
+data.setCell(9, 3, 8281);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'popupFunctionalityTest1')
-data.setCell(10, 2, 'org.projecttoolstation.homePageTesting')
-data.setCell(10, 3, 3094);
+data.setCell(10, 1, 'testCase1')
+data.setCell(10, 2, 'org.projecttoolstation.TestingSingInSinario')
+data.setCell(10, 3, 7713);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testcase4')
-data.setCell(11, 2, 'org.projecttoolstation.homePageTesting')
-data.setCell(11, 3, 2361);
+data.setCell(11, 1, 'testCase2')
+data.setCell(11, 2, 'org.projecttoolstation.TestingSingInSinario')
+data.setCell(11, 3, 7529);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testcase3')
+data.setCell(12, 1, 'popupFunctionalityTest1')
 data.setCell(12, 2, 'org.projecttoolstation.homePageTesting')
-data.setCell(12, 3, 1826);
+data.setCell(12, 3, 2631);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testcase1')
+data.setCell(13, 1, 'testcase3')
 data.setCell(13, 2, 'org.projecttoolstation.homePageTesting')
-data.setCell(13, 3, 1227);
+data.setCell(13, 3, 1965);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'testCase3')
 data.setCell(14, 2, 'org.projecttoolstation.TestingSingInSinario')
-data.setCell(14, 3, 1003);
+data.setCell(14, 3, 1577);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testCase4')
-data.setCell(15, 2, 'org.projecttoolstation.TestingSingInSinario')
-data.setCell(15, 3, 397);
+data.setCell(15, 1, 'testcase1')
+data.setCell(15, 2, 'org.projecttoolstation.homePageTesting')
+data.setCell(15, 3, 1512);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testCase4')
+data.setCell(16, 2, 'org.projecttoolstation.TestingSingInSinario')
+data.setCell(16, 3, 724);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -561,254 +602,266 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTime(https://www.toolstation.com/)</span>
-                <span class="method-start">27144 ms</span>
+                <span class="method-start">17854 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">popupFunctionalityTest1</span>
-                <span class="method-start">51990 ms</span>
+                <span class="method-start">26548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">55092 ms</span>
+                <span class="method-start">29186 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime(https://www.toolstation.com/)</span>
-                <span class="method-start">55093 ms</span>
+                <span class="method-start">29188 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase2</span>
-                <span class="method-start">100261 ms</span>
+                <span class="method-start">40307 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">112807 ms</span>
+                <span class="method-start">58342 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime(https://www.toolstation.com/)</span>
-                <span class="method-start">112808 ms</span>
+                <span class="method-start">58344 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testcase1</span>
-                <span class="method-start">128875 ms</span>
+                <span class="method-start">82009 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">130105 ms</span>
+                <span class="method-start">83523 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime(https://www.toolstation.com/)</span>
-                <span class="method-start">130106 ms</span>
+                <span class="method-start">83525 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testcase3</span>
-                <span class="method-start">143083 ms</span>
+                <span class="method-start">94432 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">144915 ms</span>
+                <span class="method-start">96404 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime(https://www.toolstation.com/)</span>
-                <span class="method-start">144916 ms</span>
+                <span class="method-start">96407 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testcase4</span>
-                <span class="method-start">151997 ms</span>
+                <span class="method-start">109430 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">154363 ms</span>
+                <span class="method-start">119476 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">154365 ms</span>
+                <span class="method-start">119477 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.projecttoolstation.signUpFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startingBrowser</span>
-                <span class="method-start">154372 ms</span>
+                <span class="method-start">119482 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTime</span>
-                <span class="method-start">154374 ms</span>
+                <span class="method-start">119483 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase1</span>
-                <span class="method-start">163365 ms</span>
+                <span class="method-start">128054 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">185055 ms</span>
+                <span class="method-start">144985 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">185056 ms</span>
+                <span class="method-start">144986 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.projecttoolstation.TestingSingInSinario</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startingBrowser</span>
-                <span class="method-start">185057 ms</span>
+                <span class="method-start">144987 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTime(https://www.toolstation.com/login)</span>
-                <span class="method-start">185058 ms</span>
+                <span class="method-start">144988 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase1</span>
-                <span class="method-start">201532 ms</span>
+                <span class="method-start">149949 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">207564 ms</span>
+                <span class="method-start">157666 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime(https://www.toolstation.com/login)</span>
-                <span class="method-start">207566 ms</span>
+                <span class="method-start">157667 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase2</span>
-                <span class="method-start">218143 ms</span>
+                <span class="method-start">162972 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">237014 ms</span>
+                <span class="method-start">170505 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime(https://www.toolstation.com/login)</span>
-                <span class="method-start">237016 ms</span>
+                <span class="method-start">170506 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase3</span>
-                <span class="method-start">244888 ms</span>
+                <span class="method-start">174895 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">245896 ms</span>
+                <span class="method-start">176472 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime(https://www.toolstation.com/login)</span>
-                <span class="method-start">245897 ms</span>
+                <span class="method-start">176472 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase4</span>
-                <span class="method-start">259401 ms</span>
+                <span class="method-start">180801 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">259803 ms</span>
+                <span class="method-start">181528 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">259804 ms</span>
+                <span class="method-start">181529 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.projecttoolstation.forgotPasswordFuntionality</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startingBowser</span>
-                <span class="method-start">259806 ms</span>
+                <span class="method-start">181530 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">starTime</span>
-                <span class="method-start">259807 ms</span>
+                <span class="method-start">181532 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase1</span>
-                <span class="method-start">270718 ms</span>
+                <span class="method-start">187316 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">281682 ms</span>
+                <span class="method-start">195599 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">281683 ms</span>
+                <span class="method-start">195600 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.projecttoolstation.SearchBoxFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startingBrowser</span>
-                <span class="method-start">281684 ms</span>
+                <span class="method-start">195601 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTime</span>
-                <span class="method-start">282378 ms</span>
+                <span class="method-start">196249 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase1(spray paint)</span>
-                <span class="method-start">292923 ms</span>
+                <span class="method-start">203094 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">336122 ms</span>
+                <span class="method-start">215022 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime</span>
-                <span class="method-start">336124 ms</span>
+                <span class="method-start">215372 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase1(spray paint)</span>
+                <span class="method-start">220757 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTime</span>
+                <span class="method-start">232367 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTime</span>
+                <span class="method-start">232369 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase1(pipe)</span>
-                <span class="method-start">349882 ms</span>
+                <span class="method-start">237665 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">366916 ms</span>
+                <span class="method-start">248895 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime</span>
-                <span class="method-start">366917 ms</span>
+                <span class="method-start">248895 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase1(drill bit set)</span>
-                <span class="method-start">376519 ms</span>
+                <span class="method-start">254761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">389105 ms</span>
+                <span class="method-start">266051 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTime</span>
-                <span class="method-start">389106 ms</span>
+                <span class="method-start">266052 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase1(water pump)</span>
-                <span class="method-start">396551 ms</span>
+                <span class="method-start">271522 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">409340 ms</span>
+                <span class="method-start">282739 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">409341 ms</span>
+                <span class="method-start">282740 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.projecttoolstation.Trolleyfunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Startingbrowser</span>
-                <span class="method-start">409342 ms</span>
+                <span class="method-start">282740 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTime</span>
-                <span class="method-start">409343 ms</span>
+                <span class="method-start">282741 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase1</span>
-                <span class="method-start">424617 ms</span>
+                <span class="method-start">287980 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTime</span>
-                <span class="method-start">475670 ms</span>
+                <span class="method-start">330018 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">475671 ms</span>
+                <span class="method-start">330019 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

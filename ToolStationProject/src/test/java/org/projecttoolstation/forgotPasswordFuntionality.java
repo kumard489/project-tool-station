@@ -56,7 +56,6 @@ public class forgotPasswordFuntionality extends BaseClass {
 	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
 		/* closeBrowser(); */
-		SearchBoxFunctionality sbf = new SearchBoxFunctionality();
 	}
 
 }

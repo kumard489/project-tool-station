@@ -94,8 +94,6 @@ public class TestingSingInSinario extends BaseClass {
 	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
 		/* closeBrowser(); */
-		forgotPasswordFuntionality fpf = new forgotPasswordFuntionality();
-
 	}
 
 }
