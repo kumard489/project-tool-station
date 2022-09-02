@@ -59,16 +59,24 @@ public class SearchBoxFunctionality extends BaseClass {
 
 		if (SearchByItems.startsWith("spray")) {
 			implicitWaiting();
-			Assert.assertTrue(driver.getCurrentUrl().contains("spray"));
+			boolean contains = driver.getCurrentUrl().contains("spray");
+			scrnshot("spary_paint");
+			Assert.assertTrue(contains);
+			if (!contains) {
+				scrnshot("spary_paint_failed");
+			}
 		} else if (SearchByItems.startsWith("pi")) {
 			implicitWaiting();
 			Assert.assertTrue(driver.getCurrentUrl().contains("pipe"));
+			scrnshot("pipe");
 		} else if (SearchByItems.startsWith("drill")) {
 			implicitWaiting();
 			Assert.assertTrue(driver.getCurrentUrl().contains("drill"));
+			scrnshot("drill_bit");
 		} else {
 			implicitWaiting();
 			Assert.assertTrue(driver.getCurrentUrl().contains("water"));
+			scrnshot("water_pump");
 		}
 
 	}

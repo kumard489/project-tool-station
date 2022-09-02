@@ -51,7 +51,7 @@ public class homePageTesting extends BaseClass {
 		implicitWaiting();
 		hp.getSetBranch().click();
 		Assert.assertTrue(hp.getSetBranchMessage().getText().contains("branch"));
-
+		scrnshot("set_branch_page");
 	}
 
 	// checking signin UI
@@ -62,6 +62,7 @@ public class homePageTesting extends BaseClass {
 		hp.getSignIn().click();
 		String currentUrl = driver.getCurrentUrl();
 		Assert.assertTrue(currentUrl.contains("login"));
+		scrnshot("sign_in_page");
 	}
 
 	// checking register UI
@@ -71,7 +72,7 @@ public class homePageTesting extends BaseClass {
 		implicitWaiting();
 		hp.getRegister().click();
 		Assert.assertTrue(driver.getCurrentUrl().contains("register"));
-
+        scrnshot("register_page");
 	}
 
 	// checking cart UI
@@ -81,7 +82,7 @@ public class homePageTesting extends BaseClass {
 		implicitWaiting();
 		hp.getTrolley().click();
 		Assert.assertTrue(driver.getCurrentUrl().contains("trolley"));
-
+        scrnshot("Trolley_page");
 	}
 
 	@AfterMethod(groups = "retest")

@@ -59,6 +59,7 @@ public class signUpFunctionality extends BaseClass {
 		cma.getCbAcceptPolicies().click();
 		cma.getBtnContinue().click();
 		Assert.assertTrue(cma.getShortPasswordMessage().getText().contains("too short"));
+		scrnshot("short_password");
 	}
 
 	@AfterMethod(groups = "smoke")

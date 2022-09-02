@@ -285,7 +285,8 @@ public class BaseClass {
 	public static void scrnshot(String snapName) {
 		ss = (TakesScreenshot) driver;
 		File scorce = ss.getScreenshotAs(OutputType.FILE);
-		File destination = new File("C:\\Users\\shpra\\eclipse-workspace\\SampleMav\\Screenshot\\" + snapName + ".jpg");
+		File destination = new File(
+				"C:\\Users\\shpra\\git\\project-tool-station\\ToolStationProject\\ScreenShot\\" + snapName + ".jpg");
 		try {
 			FileUtils.copyFile(scorce, destination);
 		} catch (Exception e) {
@@ -297,7 +298,8 @@ public class BaseClass {
 	public static void scrnshotParticlarThing(WebElement target, String snapName) {
 		ss = (TakesScreenshot) driver;
 		File scorce = target.getScreenshotAs(OutputType.FILE);
-		File destination = new File("C:\\Users\\shpra\\eclipse-workspace\\SampleMav\\Screenshot\\" + snapName + ".jpg");
+		File destination = new File(
+				"C:C:\\Users\\shpra\\git\\project-tool-station\\ToolStationProject\\ScreenShot\\" + snapName + ".jpg");
 		try {
 			FileUtils.copyFile(scorce, destination);
 		} catch (Exception e) {

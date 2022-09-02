@@ -45,6 +45,7 @@ public class forgotPasswordFuntionality extends BaseClass {
 		fpf.getTxtFPUsername().sendKeys(getData(1, 6, 0));
 		fpf.getBtnReset().click();
 		Assert.assertTrue(fpf.getInvalidMailIdMessage().getText().contains("valid email"));
+		scrnshot("invalid_email");
 	}
 
 	@AfterMethod(groups = "smoke")

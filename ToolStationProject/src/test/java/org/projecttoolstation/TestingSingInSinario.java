@@ -53,6 +53,7 @@ public class TestingSingInSinario extends BaseClass {
 		si.getBtnLogin().click();
 		String text = si.getIncorrectLoginDetailsMessage().getText();
 		Assert.assertTrue(text.contains("Incorrect"));
+		scrnshot("incorrect");
 	}
 
 	// long username and invalid password
@@ -64,6 +65,7 @@ public class TestingSingInSinario extends BaseClass {
 		si.getBtnLogin().click();
 		String text = si.getUsernameValidEmailMessage().getText();
 		Assert.assertTrue(text.contains("valid email"));
+		scrnshot("long_username");
 	}
 
 	// empty username and invalid password
@@ -74,6 +76,7 @@ public class TestingSingInSinario extends BaseClass {
 		si.getBtnLogin().click();
 		String currentUrl = driver.getCurrentUrl();
 		Assert.assertTrue(currentUrl.contains("login"));
+		scrnshot("empty_username");
 	}
 
 	// leaving both username and password as empty
@@ -83,6 +86,7 @@ public class TestingSingInSinario extends BaseClass {
 		si.getBtnLogin().click();
 		String currentUrl = driver.getCurrentUrl();
 		Assert.assertTrue(currentUrl.contains("login"));
+		scrnshot("both_empty");
 	}
 
 	@AfterMethod(groups = "smoke")
