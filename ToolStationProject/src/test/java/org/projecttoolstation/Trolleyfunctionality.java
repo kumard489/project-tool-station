@@ -88,6 +88,8 @@ public class Trolleyfunctionality extends BaseClass {
 	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
 		closeBrowser();
+		System.out.println("Trolleyfunctionality ended");
+		
 	}
 
 }

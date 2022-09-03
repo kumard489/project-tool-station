@@ -3,15 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.projecttoolstation.SearchBoxFunctionality">
+      <class name="org.projecttoolstation.TestingSingInSinario">
         <methods>
-          <include name="startingBrowser"/>
+          <include name="endTime"/>
           <include name="testCase1"/>
           <include name="startTime"/>
-          <include name="endTime"/>
+          <include name="popupFunctionalityTest2"/>
           <include name="quitBrowser"/>
+          <include name="startingBrowser"/>
+          <include name="testCase2"/>
+          <include name="testCase4"/>
+          <include name="testCase3"/>
         </methods>
-      </class> <!-- org.projecttoolstation.SearchBoxFunctionality -->
+      </class> <!-- org.projecttoolstation.TestingSingInSinario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

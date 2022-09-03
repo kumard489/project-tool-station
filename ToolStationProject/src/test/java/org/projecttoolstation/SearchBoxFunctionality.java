@@ -91,6 +91,7 @@ public class SearchBoxFunctionality extends BaseClass {
 	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
 		/* closeBrowser(); */
+		System.out.println("SearchBoxFunctionality ended");
 
 	}
 
