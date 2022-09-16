@@ -50,8 +50,8 @@ public class homePageTesting extends BaseClass {
 		HomepagePojo hp = new HomepagePojo();
 		implicitWaiting();
 		hp.getSetBranch().click();
-		Assert.assertTrue(hp.getSetBranchMessage().getText().contains("branch"));
-		scrnshot("set_branch_page");
+		Assert.assertTrue(hp.getSetBranchMessage().getText().contains("store"));
+		scrnshot("set_store_page");
 	}
 
 	// checking signin UI

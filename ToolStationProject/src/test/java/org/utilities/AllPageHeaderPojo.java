@@ -162,7 +162,7 @@ public class AllPageHeaderPojo extends BaseClass {
 			@FindBy(xpath = "(//a[text()=' Clearance '])[1]") })
 	private WebElement clearance;
 
-	@FindBy(xpath = "//h2[text()='Set your local branch']")
+	@FindBy(xpath = "//h2[text()='Set your local store']")
 	private WebElement setBranchMessage;
 
 	@FindBy(xpath = "//i[@class='fa fa-search']")
