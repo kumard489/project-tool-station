@@ -285,8 +285,7 @@ public class BaseClass {
 	public static void scrnshot(String snapName) {
 		ss = (TakesScreenshot) driver;
 		File scorce = ss.getScreenshotAs(OutputType.FILE);
-		File destination = new File(
-				"C:\\Users\\shpra\\git\\project-tool-station\\ToolStationProject\\ScreenShot\\" + snapName + ".jpg");
+		File destination = new File(System.getProperty("user.dir")+"\\ScreenShot\\" + snapName + ".jpg");
 		try {
 			FileUtils.copyFile(scorce, destination);
 		} catch (Exception e) {
@@ -298,8 +297,7 @@ public class BaseClass {
 	public static void scrnshotParticlarThing(WebElement target, String snapName) {
 		ss = (TakesScreenshot) driver;
 		File scorce = target.getScreenshotAs(OutputType.FILE);
-		File destination = new File(
-				"C:C:\\Users\\shpra\\git\\project-tool-station\\ToolStationProject\\ScreenShot\\" + snapName + ".jpg");
+		File destination = new File(System.getProperty("user.dir")+"\\ScreenShot\\"+ snapName + ".jpg");
 		try {
 			FileUtils.copyFile(scorce, destination);
 		} catch (Exception e) {
@@ -568,7 +566,7 @@ public class BaseClass {
 
 	// 72
 	public static void rowLength(String fileName, int sheetIndex) {
-		File f = new File("C:\\Users\\shpra\\eclipse-workspace\\SampleMav\\src\\test\\resources\\Test_Data\\" + fileName
+		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Test_Data\\"+ fileName
 				+ ".xlsx");
 		try {
 			fis = new FileInputStream(f);
@@ -590,7 +588,7 @@ public class BaseClass {
 
 	// 73
 	public static void cellLength(String fileName, int sheetIndex, int rowIndex) {
-		File f = new File("C:\\Users\\shpra\\eclipse-workspace\\SampleMav\\src\\test\\resources\\Test_Data\\" + fileName
+		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Test_Data\\"+fileName
 				+ ".xlsx");
 		try {
 			fis = new FileInputStream(f);
@@ -615,9 +613,7 @@ public class BaseClass {
 	// 74
 	public static String getCellValueWithDate(String fileName, int sheetIndex, int rowIndex, int cellIndex,
 			String dateFrmt) {
-		File f = new File(
-				"C:\\Users\\shpra\\git\\project-tool-station\\ToolStationProject\\src\\test\\resources\\Test_Data\\"
-						+ fileName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Test_Data\\"+ fileName + ".xlsx");
 		String data = "";
 		try {
 			fis = new FileInputStream(f);
@@ -652,7 +648,7 @@ public class BaseClass {
 
 	// 75
 	public static void getCellValueWithoutDate(String fileName, int sheetIndex, int rowIndex, int cellIndex) {
-		File f = new File("C:\\Users\\shpra\\eclipse-workspace\\SampleMav\\src\\test\\resources\\Test_Data\\" + fileName
+		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Test_Data\\"+ fileName
 				+ ".xlsx");
 		try {
 			fis = new FileInputStream(f);
@@ -683,7 +679,7 @@ public class BaseClass {
 
 	// 76
 	public static void getAllCellValues(String fileName, int sheetIndex, String dateFrmt) {
-		File f = new File("C:\\Users\\shpra\\eclipse-workspace\\SampleMav\\src\\test\\resources\\Test_Data\\" + fileName
+		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Test_Data\\"+ fileName
 				+ ".xlsx");
 		try {
 			fis = new FileInputStream(f);
@@ -723,7 +719,7 @@ public class BaseClass {
 
 	// 77
 	public static void getNameOfSheet(String fileName, int sheetIndex) {
-		File f = new File("C:\\Users\\shpra\\eclipse-workspace\\SampleMav\\src\\test\\resources\\Test_Data\\" + fileName
+		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Test_Data\\"+ fileName
 				+ ".xlsx");
 		try {
 			fis = new FileInputStream(f);
